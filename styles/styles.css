@@ -1,0 +1,270 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 13px   ;
+  font-family: "IBM Plex Serif", serif;
+  font-weight: 300;
+  display: inline;
+}
+.body_container{ 
+    max-width: 1200px;
+    display: inline;
+    height: auto;
+}
+.header {
+
+}
+
+.no-padding {
+  padding: 0;
+}
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: black;
+}
+.menu {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.menu li {
+  font-size: 20px;
+  list-style: none;
+  padding: 15px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.menu a {
+  color: white;
+  text-decoration: none;
+}
+.links li {
+  padding: 5px;
+  font-weight: 500;
+}
+.links a[href^="https"] {
+  display: flex;
+  font-size: 35px;
+}
+.links a[href^="https"]:last-child {
+  padding-left: 15px;
+}
+
+.cover {
+
+  height: 430px;
+
+  background-image: url(../img/cover.jpg);
+  background-position: center center;
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+.logo {
+  height: inherit;
+  display: flex;
+  align-items: center;
+}
+.logo img {
+  margin-left: auto;
+  margin-right: auto;
+  max-width: 90%;
+  padding-top: 100px;
+}
+.info{
+  background-color: black;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+  align-items: center;
+
+}
+.info__heading{
+  display: block;
+  min-width: 300px;
+  font-size: 60px;
+  padding-top: 50px;
+  margin: 0px 20px;
+  text-align: center;
+  line-height: 1.55;
+}
+.info__midle{
+
+  font-size: 30px;
+  font-weight: 300;
+  margin: 0 20px;
+  padding-bottom: 40px;
+  min-width: 300px;
+}
+.info__text{
+  padding-bottom: 30px;
+  padding-top: 30px;
+  font-size: 16px;
+  font-weight: 200;
+  margin: 0 60px;
+  min-width: 300px;
+  line-height: 1.45;
+}
+.work_photo{
+  text-align: center;
+  width: 100%;
+  display: flex;
+  justify-self: center;
+  box-sizing: border-box;
+ 
+}
+.work_photo div {
+
+  padding-top: 20px;
+
+}
+.work_photo img{
+width: 30%;
+align-items: center;
+}
+
+.price{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+.price_body{
+  position: relative;
+  display: inline;
+  max-width: 600px;
+
+}
+.price_head{
+margin: 30px 0;
+font-size: 40px;
+font-weight: 300;
+}
+ol {
+	list-style-type: none; 
+	counter-reset: num;
+	margin: 0 0 0 45px;
+	padding: 15px 0 5px 0;
+	font-size: 16px;
+}
+ol li {
+	position: relative;	
+	margin: 0;
+	padding: 0;
+}
+ol li:before {
+	content: counter(num); 
+	counter-increment: num;
+	display: inline-block;
+	position: absolute;
+	top: 0;
+	left: -38px;
+	width: 28px;
+	height: 28px;
+	text-align: center;
+	line-height: 28px;
+	font-size: 17px;
+	border-radius: 50%;
+	border: 1px solid black;
+}
+.footer{
+  background-color: rgb(168, 166, 166);
+
+}
+.footer_content{ 
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-decoration: none;
+  max-width: 100%;
+}
+.footer_text{
+
+  text-align: center;
+  margin: 50px 0 10px 0;
+  font-weight: 500;
+  font-size: 2.5em;
+  word-wrap: break-word;
+
+}
+.footer_phone>a{
+  font-size: 2rem;
+  text-decoration: none;
+  color: black;
+
+}
+.footer_links>a{
+  font-size: 40px;
+  margin: 20px 0 20px 0;
+  text-decoration: none;
+  color: black;
+}
+
+
+@media (min-width: 769px) {
+  .container {
+    max-width: 1224px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 10px;
+    padding-right: 10px;
+    color: white;
+  }
+  .menu {
+    display: flex;
+  }
+  nav ul {
+    display: flex;
+    list-style-type: none;
+    padding: 15px 35px;
+  }
+  nav li {
+    padding: 0 10px;
+  }
+  nav li:first-child {
+    padding-left: 0;
+  }
+  nav a {
+    text-decoration: none;
+    color: white;
+  }
+
+  .tel {
+    padding: 15px 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+/* 
+.services li p {
+  color: red;
+}
+
+
+
+.cover {
+  background-image: url(../img/cover.jpg);
+  background-repeat: no-repeat;
+}
+.info {
+  background-color: black;
+  color: #ffffff;
+}
+.info__heading {
+  font-size: 6em;
+}
+
+.info__midle {
+  font-size: 3em;
+} */
