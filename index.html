@@ -11,6 +11,7 @@
     />
     <link rel="stylesheet" href="styles/normalize.css" />
     <link rel="stylesheet" href="styles/styles.css" />
+    <link rel="stylesheet" href="slider/main.css">
 
 </head>
 <body>
@@ -74,6 +75,37 @@
           />
         </div>
       </section>
+
+
+
+      <!-- слайдер -->
+
+      <div>
+
+        <div class="slider">
+          <div class="slider__wrapper">
+            <div class="slider__item">
+              <div style="height: 250px; background: orange;">1</div>
+            </div>
+            <div class="slider__item">
+              <div style="height: 250px; background: green;">2</div>
+            </div>
+            <div class="slider__item">
+              <div style="height: 250px; background: violet;">3</div>
+            </div>
+            <div class="slider__item">
+              <div style="height: 250px; background: coral;">4</div>
+            </div>
+          </div>
+          <a class="slider__control slider__control_left" href="#" role="button"></a>
+          <a class="slider__control slider__control_right slider__control_show" href="#" role="button"></a>
+        </div>
+
+      </div>
+
+      <!-- / слайдер -->
+
+
         <hr>
         <div class="price">
           <spun class="price_head">Прайслист</spun>
@@ -127,5 +159,6 @@
       src="https://kit.fontawesome.com/22d7fbec7a.js"
       crossorigin="anonymous"
     ></script>
+    <script src="slider/main.js"></script>
 </body>
 </html>
